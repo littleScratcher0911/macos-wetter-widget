@@ -2,17 +2,33 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wetter Widget</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>🌦️ Wetter-Widget</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🌤️ Wetter Widget</h1>
-  <p>Hier kannst du dir ein einfaches Wetter-Widget anschauen und herunterladen.</p>
+  <main>
+    <h1>🌦️ Wetter-Widget</h1>
 
-  <div id="widget-container"></div>
+    <!-- Suchfeld -->
+    <form id="search-form" aria-label="Ort auswählen">
+      <input id="city-input"
+             type="text"
+             placeholder="Stadt oder Ort eingeben …"
+             autocomplete="off"
+             required>
+      <button type="submit">Wetter holen</button>
+    </form>
 
-  <button id="download-btn">📥 Widget herunterladen</button>
+    <!-- Anzeige-Container -->
+    <section id="widget" aria-live="polite"></section>
+
+    <!-- Code-Download -->
+    <button id="download-btn" hidden>📥 Widget-Code herunterladen</button>
+    <p class="hint">
+      Datenquelle: <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a> – frei nutzbar, keine API-Keys nötig.
+    </p>
+  </main>
 
   <script src="widget.js"></script>
 </body>
