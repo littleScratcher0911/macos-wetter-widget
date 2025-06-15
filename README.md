@@ -1,4 +1,4 @@
-# test1
-das ist ein test
-
-Um GitHub zu testen ist dieses Repository erstellt
+# macOS Wetter Widget
+Hinweis! Es könnten Fehler vorhanden sein.
+Bitte beachte auch dass:
+Weather data © Open-Meteo
