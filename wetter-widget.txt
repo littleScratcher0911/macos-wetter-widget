@@ -1,4 +1,0 @@
-weather-widget/
-├── index.html   → Seite + Suchfeld + Container
-├── style.css    → Mac-ähnlicher „glass“-Look
-└── widget.js    → Geocoding + Forecast + Rendering + Download
